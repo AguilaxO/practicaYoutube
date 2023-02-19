@@ -43,6 +43,13 @@ a{
     z-index: -1;
 }
 
+.hero {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+    justify-content: flex-start;
+}
+
 #heroe h1 {
     display: block;
     width: fit-content;
