@@ -12,6 +12,15 @@ html{
     font-family: 'Montserrat', sans-serif;
 }
 
+p {
+    font-size: 1.4rem;
+    margin-top: 5px;
+    line-height: 2rem;
+    font-weight: 300;
+    letter-spacing: 0.05rem;
+    color: black;
+}
+    
 a{
     text-decoration: none;
 }
@@ -23,6 +32,12 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 #heroe {
@@ -117,19 +132,17 @@ a{
 }
 
 /* Sección de servicios */
-#servicios {
 
-}
 
 #servicios .servicios-contenedor {
     flex-direction: column;
     text-align: center;
     max-width: 1500px;
     margin: 0 auto;
-    padding: 100px auto;
+    padding: 100px 0;
 }
 
-#servicios .servicios-contenedor-general_titulo {
+#servicios .contenedor-titulo {
     font-size: 4rem;
     font-weight: 450;
     color: black;
@@ -139,37 +152,66 @@ a{
     text-align: center;
 }
 
-#servicios .servicios-contenedor-general_titulo span {
+#servicios .contenedor-titulo span {
     color: crimson;
 }
 
-#servicios .servicios-contenedor-general p {
-    font-size: 1.4rem;
-    margin-top: 5px;
-    line-height: 2.5rem;
-    font-weight: 300;
-    letter-spacing: 0.05rem;
-}
+
 
 #servicios .servicios-contenedor-particulares {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: 50px;
 }
 
 #servicios .servicios-contenedor-particulares_tarjeta {
     flex-basis: 80%;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
     justify-content: center;
     padding: 30px;
     border-radius: 10px;
     background-image: url(./img/img-1.jpg);
     background-size: cover;
-    margin: 10px 5%;    
+    margin: 10px 5%;
+    position: relative;
+    z-index: 1;    
+    overflow: hidden;
 }
+
+#servicios .servicios-contenedor-particulares_tarjeta::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    z-index: -1;
+    opacity: .8;
+}
+
+#servicios .servicios-contenedor-particulares_tarjeta .icon {
+    height: 60px;
+    width: 60px;
+    margin-bottom: 20px;
+}
+
+#servicios .servicios-contenedor-particulares_tarjeta h2 {
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 12px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#servicios .servicios-contenedor-particulares_tarjeta p {
+    color: white;
+}
+
 /* Fin de la sección de servicios */
 
 @keyframes revelado_texto_caja {
