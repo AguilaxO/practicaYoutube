@@ -40,6 +40,20 @@ img {
     object-fit: cover;
 }
 
+.contenedor-titulo {
+    font-size: 4rem;
+    font-weight: 500;
+    color: black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+
+.contenedor-titulo span {
+    color: crimson;
+}
+
 #heroe {
     background-image: url(./img/hero-bg.jpg);
     background-size: cover;
@@ -142,22 +156,6 @@ img {
     padding: 100px 0;
 }
 
-#servicios .contenedor-titulo {
-    font-size: 4rem;
-    font-weight: 450;
-    color: black;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    letter-spacing: .2rem;
-    text-align: center;
-}
-
-#servicios .contenedor-titulo span {
-    color: crimson;
-}
-
-
-
 #servicios .servicios-contenedor-particulares {
     display: flex;
     align-items: center;
@@ -213,6 +211,61 @@ img {
 }
 
 /* Fin de la sección de servicios */
+
+/* Sección de proyectos */
+
+#proyectos .proyectos-contenedor {
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+#proyectos .proyectos-encabezado h1 {
+    margin-bottom: 50px;
+}
+
+#proyectos .proyectos-tarjetas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#proyectos .proyectos-tarjeta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px auto;
+}
+
+#proyectos .proyectos-tarjeta-informacion {
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    padding: 30px;
+    flex-basis: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+
+#proyectos .proyectos-tarjeta-informacion h1 {
+    font-size: 3.9rem;
+    font-weight: 500;
+}
+
+#proyectos .proyectos-tarjeta-informacion h2 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-top: 10px;
+}
+/* Fin de la sección de proyectos */
 
 @keyframes revelado_texto_caja {
     50% {
