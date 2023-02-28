@@ -272,8 +272,9 @@ img {
 }
 
 #proyectos .proyectos-tarjeta-imagen {
-    flex-basis: 50%;
-    height: 300px;
+    flex-basis: 100%;
+    height: 200px;
+    /* width: 100%; */
     overflow: hidden;
 }
 /* Fin de la sección de proyectos */
