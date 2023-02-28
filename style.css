@@ -257,13 +257,24 @@ img {
 
 #proyectos .proyectos-tarjeta-informacion h1 {
     font-size: 3.9rem;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 #proyectos .proyectos-tarjeta-informacion h2 {
-    font-size: 1.6rem;
-    font-weight: 500;
+    font-size: 1.7rem;
+    font-weight: 550;
     margin-top: 10px;
+}
+
+#proyectos .proyectos-tarjeta-informacion p {
+    color: white;
+    text-align: center;
+}
+
+#proyectos .proyectos-tarjeta-imagen {
+    flex-basis: 50%;
+    height: 300px;
+    overflow: hidden;
 }
 /* Fin de la sección de proyectos */
 
