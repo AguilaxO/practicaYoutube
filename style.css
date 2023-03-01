@@ -54,6 +54,24 @@ img {
     color: crimson;
 }
 
+.cta {
+    background-color: transparent;
+    border: 2px solid crimson;
+    color: white;
+    display: inline-block;
+    font-size: 2rem;
+    letter-spacing: .1rem;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    margin-top: 30px;
+    transition: background-color .3s;
+}
+.cta:hover {
+    color: white;
+    background-color: crimson;
+    
+}
+
 #heroe {
     background-image: url(./img/hero-bg.jpg);
     background-size: cover;
@@ -129,21 +147,7 @@ img {
     animation-delay: 2.5s;
 }
 
-#heroe .cta {
-    background-color: transparent;
-    border: 2px solid crimson;
-    color: white;
-    display: inline-block;
-    font-size: 2rem;
-    letter-spacing: .1rem;
-    padding: 10px 30px;
-    text-transform: uppercase;
-    margin-top: 30px;
-    transition: background-color .3s;
-}
-#heroe .cta:hover {
-    background-color: crimson;
-}
+
 
 /* Sección de servicios */
 
@@ -313,8 +317,23 @@ img {
 }
 
 #acercaDeMi .acercaDeMiContenedor-imagen {
-    width: 250px;
-    height: 360px;
+    width: 220px;
+    height: 330px;
+    position: relative;
+    border: 10px solid white;
+    z-index: auto;
+   
+}
+
+#acercaDeMi .acercaDeMiContenedor-imagen::after {
+    content: '';
+    position: absolute;
+    left: -33px;
+    top: 19px;
+    height: 98%;
+    width: 98%;
+    border: 7px solid crimson;
+    z-index: -1;
 }
 
 #acercaDeMi .acercaDeMiContenedor-texto {
@@ -327,6 +346,25 @@ img {
     margin-bottom: 10px;
     letter-spacing: 0.1rem;
 }
+
+#acercaDeMi .acercaDeMiContenedor-texto p {
+    margin-bottom: 25px;
+    
+}
+
+#acercaDeMi .acercaDeMiContenedor-texto .cta {
+    font-size: 1.3rem;
+    color: black;
+    margin-top: 5px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    padding: 10px 25px;
+}
+
+#acercaDeMi .acercaDeMiContenedor-texto .cta:hover {
+    color: white;
+}
+
 /* Fin de la sección acerca de mí */
 
 @keyframes revelado_texto_caja {
