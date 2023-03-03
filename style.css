@@ -414,12 +414,34 @@ img {
 
 /* Pie de página */
 
-#pieDePagina .pieDePagina-iconos{
+#pieDePagina .pieDePagina {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 100px;
+}
+
+#pieDePagina .pieDePagina-textoSuperior h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0;
+}
+
+#pieDePagina .pieDePagina-textoSuperior p {
+    font-size: 1.3rem;
+}
+
+#pieDePagina .pieDePagina-iconos {
+    padding: 1.5rem;
     display: flex;
 }
-#pieDePagina .pieDePagina-iconos .pieDePagina-icono {
+
+#pieDePagina .pieDePagina-icono {
+    margin: 0 1rem;
     width: 30px;
 }
+
 /* Fin del pie de página */
 @keyframes revelado_texto_caja {
     50% {
