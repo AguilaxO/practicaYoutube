@@ -502,19 +502,21 @@ img {
     }
 
     .cta {
-        background-color: transparent;
-        border: 2px solid crimson;
-        color: white;
-        display: inline-block;
-        font-size: 2rem;
-        letter-spacing: .1rem;
-        padding: 10px 30px;
-        text-transform: uppercase;
-        margin-top: 30px;
-        transition: background-color .3s;
+        font-size: 2.1rem;
+        padding: 13px 42px;
     }
     /* Sección del heroe */
 
+    .contenedor-titulo {
+        font-size: 4rem;
+    }
+
+    /* Sección de servicios */
+    #servicios .servicios-contenedor-particulares_tarjeta {
+        flex-basis: 45%;
+        margin: 1.66%;
+    }
+    /* Fin de las sección de servicios */
 }
 
 /* Fin de para tablets */
