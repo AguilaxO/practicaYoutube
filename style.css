@@ -517,6 +517,36 @@ img {
         margin: 1.66%;
     }
     /* Fin de las sección de servicios */
+
+    /* Sección de proyectos */
+    #proyectos .proyectos-tarjeta {
+        width: 100%;
+        border-radius: 0;
+        margin: 0;
+        height: 400px;
+        flex-direction: row;
+    }
+
+    #proyectos .proyectos-tarjeta:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+
+    /* #proyectos .proyectos-tarjetas .proyectos-tarjeta-informacion {
+        height: 100%;
+        flex-basis: 50%;
+    } */
+
+    #proyectos .proyectos-tarjetas .proyectos-tarjeta-imagen {
+        /* height: 100%; */
+        flex-basis: 50%;
+    }
+
+
+
+
+
+
+    /* Fin de la sección de proyectos */
 }
 
 /* Fin de para tablets */
