@@ -69,7 +69,7 @@ img {
 .cta:hover {
     color: white;
     background-color: crimson;
-    
+
 }
 
 #heroe {
@@ -322,7 +322,7 @@ img {
     position: relative;
     border: 10px solid white;
     z-index: auto;
-   
+
 }
 
 #acercaDeMi .acercaDeMiContenedor-imagen::after {
@@ -349,7 +349,7 @@ img {
 
 #acercaDeMi .acercaDeMiContenedor-texto p {
     margin-bottom: 25px;
-    
+
 }
 
 #acercaDeMi .acercaDeMiContenedor-texto .cta {
@@ -541,12 +541,68 @@ img {
         flex-basis: 50%;
     }
 
-
-
-
-
-
     /* Fin de la sección de proyectos */
+
+    /* Sección sobre mi */
+    #acercaDeMi .acercaDeMiContenedor {
+        flex-direction: row;
+    }
+
+    #acercaDeMi .acercaDeMiContenedor-texto {
+        flex-basis: 50%;
+        /* padding-left: 5%; */
+        margin: 0 auto;
+    }
+    #acercaDeMi .acercaDeMiContenedor-imagen {
+        flex-basis: 35%;
+        height: 400px;
+        margin-left: 5%;
+    }
+
+    #acercaDeMi .acercaDeMiContenedor .acercaDeMiContenedor-imagen::after {
+        left: -45px;
+        top: 34px;
+        height: 98%;
+        width: 98%;
+        border: 10px solid crimson;
+    }
+    /* Fin de la sección sobre mi */
+
+    /* Sección de contacto */
+
+    #contacto .contacto {
+        min-height: fit-content;
+        min-width: 20vh;
+        margin-top: 50px;
+    }
+
+    #contacto .contacto .contacto-tarjetas {
+        flex-direction: row;
+        width: 100%;
+        margin: 0 20px;
+    }
+    #contacto .contacto .contacto-tarjeta {
+        flex-direction: row;
+        /* margin: 20px; */
+        padding: 7x;
+        margin: 12px;
+    }
+
+    #contacto .contacto-tarjeta .contacto-tarjeta-icono{
+        height: 80px;
+        width: 80px;
+    }
+
+    #contacto .contacto-tarjeta-icono img{
+        object-fit: contain;
+    }
+
+    #contacto .contacto-tarjeta .contacto-tarjeta-texto{
+        width: 100%;
+    }
+
+    
+    /* Fin de la sección de contacto */
 }
 
 /* Fin de para tablets */
