@@ -571,9 +571,9 @@ img {
     /* Sección de contacto */
 
     #contacto .contacto {
-        min-height: fit-content;
+        height: fit-content;
         min-width: 20vh;
-        margin-top: 50px;
+        margin: 50px 0;
     }
 
     #contacto .contacto .contacto-tarjetas {
@@ -583,23 +583,32 @@ img {
     }
     #contacto .contacto .contacto-tarjeta {
         flex-direction: row;
-        /* margin: 20px; */
         padding: 7px;
         margin: 12px;
     }
 
-    #contacto .contacto-tarjeta .contacto-tarjeta-icono{
-        height: 80px;
-        width: 80px;
-    }
+   #contacto .contacto-tarjeta .iconoTextoChico {
+        flex-basis: 50px;
+        margin: 0 5% 0 0;
+        height: 65px;
+   }
+
+   #contacto .contacto-tarjeta .iconoTextoGrande {
+        flex-basis: 75px;
+        margin-bottom: 0;
+   }
 
     #contacto .contacto-tarjeta-icono img{
         object-fit: contain;
     }
 
     #contacto .contacto-tarjeta .contacto-tarjeta-texto{
-        width: 100%;
+        width: auto;
     }
+
+    #contacto .contacto-tarjeta .direccion-texto {
+        width: auto;
+    } 
     /* Fin de la sección de contacto */
 }
 
