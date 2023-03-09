@@ -160,6 +160,11 @@ img {
     padding: 100px 0;
 }
 
+#servicios .servicios-contenedor-general {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
 #servicios .servicios-contenedor-particulares {
     display: flex;
     align-items: center;
@@ -193,7 +198,7 @@ img {
     width: 100%;
     background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
     z-index: -1;
-    opacity: .8;
+    opacity: .9;
 }
 
 #servicios .servicios-contenedor-particulares_tarjeta .icon {
@@ -571,9 +576,9 @@ img {
     /* Sección de contacto */
 
     #contacto .contacto {
-        height: fit-content;
+        min-height: auto;
         min-width: 20vh;
-        margin: 50px 0;
+        margin: 50px auto;
     }
 
     #contacto .contacto .contacto-tarjetas {
@@ -588,14 +593,15 @@ img {
     }
 
    #contacto .contacto-tarjeta .iconoTextoChico {
-        flex-basis: 50px;
+        width: 50px;
         margin: 0 5% 0 0;
         height: 65px;
    }
 
    #contacto .contacto-tarjeta .iconoTextoGrande {
-        flex-basis: 75px;
-        margin-bottom: 0;
+        width: 65px;
+        margin: 0 5% 0 0;
+        height: 65px;
    }
 
     #contacto .contacto-tarjeta-icono img{
@@ -606,12 +612,46 @@ img {
         width: auto;
     }
 
-    #contacto .contacto-tarjeta .direccion-texto {
-        width: auto;
-    } 
-    /* Fin de la sección de contacto */
-}
+    /* #contacto .contacto-tarjeta .contacto-tarjeta-texto{
+        width: 100%;
+    } */
 
+    #contacto .contacto-tarjeta .direccion-texto{
+        width: 100%;
+    }
+    /* Fin de la sección de contacto */
+
+    #pieDePagina .pieDePagina {
+        margin-top: 200px;
+    }
+}
 /* Fin de para tablets */
 
+/* Sección de computadora */
+@media only screen and (min-width: 1200px){
+    
+    /* Sección de héroe */
+    #heroe .hero h1 {
+        font-size: 5rem;
+    }
+
+    .cta {
+        font-size: 2.3rem;
+        padding: 15px 44px;
+    }
+
+        /* Fin de la sección de héroe */
+
+    .contenedor-titulo {
+        font-size: 4.5 rem;
+    }
+
+    #servicios .servicios-contenedor-particulares .servicios-contenedor-particulares_tarjeta {
+        flex-basis: 22%;
+        margin: 1.5%;
+    }
+
+}
+
+/* Fin de la sección de computadora */
 
