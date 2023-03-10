@@ -576,9 +576,9 @@ img {
     /* Sección de contacto */
 
     #contacto .contacto {
-        min-height: auto;
+        min-height: 100%;
         min-width: 20vh;
-        margin: 50px auto;
+        margin: 200px auto;
     }
 
     #contacto .contacto .contacto-tarjetas {
@@ -622,7 +622,7 @@ img {
     /* Fin de la sección de contacto */
 
     #pieDePagina .pieDePagina {
-        margin-top: 200px;
+        margin-top: 0;
     }
 }
 /* Fin de para tablets */
@@ -640,18 +640,84 @@ img {
         padding: 15px 44px;
     }
 
-        /* Fin de la sección de héroe */
+    /* Fin de la sección de héroe */
 
     .contenedor-titulo {
         font-size: 4.5 rem;
+    }
+    /* Sección de servicios */
+
+    #servicios .servicios-contenedor-general p {
+        font-size: 1.6rem;
     }
 
     #servicios .servicios-contenedor-particulares .servicios-contenedor-particulares_tarjeta {
         flex-basis: 22%;
         margin: 1.5%;
     }
+    /* Sección de servicios */
+
+    /* Sección de proyectos */
+    #proyectos .proyectos-tarjeta:nth-child(1) {
+        margin-top: 5px;
+    }
+    /* Fin de la sección de proyectos */
+
+    /* Sección acerca de mi */
+    #acercaDeMi .acercaDeMiContenedor-texto p {
+        font-size: 1.5rem;
+    }
+
+    #acercaDeMi .acercaDeMiContenedor-imagen {
+        flex-basis: 32%;
+        height: 450px;
+        margin-left: 5%;
+    }
+    /* Fin de la sección acerca de mi */
+    
+    /* Sección del pie de página */
+    #pieDePagina .pieDePagina {
+        padding: 20px 0;
+    }
+
+    #pieDePagina .pieDePagina .pieDePaginaContenedor {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+    }
+
+    #pieDePagina .pieDePagina .pieDePagina-textoSuperior {
+        order: 1;
+        flex-basis: 30%;
+    }
+
+    #pieDePagina .pieDePagina .pieDePagina-textoInferior {
+        order: 0;
+        flex-basis: 30%;
+        /* text-align: start; */
+        /* flex-shrink: 2; */
+    }
+
+    #pieDePagina .pieDePagina .pieDePagina-iconos {
+        order: 2;
+        flex-basis: 30%;
+        justify-content: flex-start;
+        padding: 0;
+    }
+
+    #pieDePagina .pieDePagina-iconos .pieDePagina-icono:nth-child(1) {
+        margin-left: 0;
+    }
+
+    #pieDePagina .pieDePagina-iconos .pieDePagina-icono:nth-child(4) {
+        margin-right: 0;
+    }
+    
+    /* Sección del pie de página */
 
 }
 
 /* Fin de la sección de computadora */
-
+ 
