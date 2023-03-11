@@ -72,6 +72,40 @@ img {
 
 }
 
+#encabezado {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    height: auto;
+    width: 100vw;
+}
+
+#encabezado .encabezado {
+    min-height: 8vh;
+    background-color: rgba(31, 30, 30, 0.24);
+}
+
+#encabezado .encabezado .barraDeNavegacion {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1300px;
+    padding: 0 10px;
+}
+
+#encabezado .ListaNavegacion ul {
+    list-style: none;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgb(31, 30, 30);
+}
+
 #heroe {
     background-image: url(./img/hero-bg.jpg);
     background-size: cover;
