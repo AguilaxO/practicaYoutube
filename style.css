@@ -96,12 +96,24 @@ img {
     padding: 0 10px;
 }
 
+#encabezado .encabezado-logo h1 {
+    color: white;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+#encabezado .encabezado-logo h1 span {
+    color: crimson;
+}
+
+
+
 #encabezado .ListaNavegacion ul {
     list-style: none;
     height: 100vh;
     width: 100vw;
     top: 0;
-    left: 0;
+    left: 100%;
     position: absolute;
     background-color: rgb(31, 30, 30);
     display: flex;
@@ -111,9 +123,12 @@ img {
 
     z-index: 1;
     overflow-x: hidden;
+    transition: .5s ease left;
 }
 
-
+#encabezado .ListaNavegacion ul.activo {
+    left: 0;
+}
 #encabezado .ListaNavegacion ul a{
     color: white;
     font-size: 2.5rem;
@@ -127,17 +142,70 @@ img {
 
 #encabezado .ListaNavegacion ul a::after{
     content: attr(data-after);
+    text-align: center;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
     color: rgba(240, 248, 255, 0.021);
     font-size: 9rem;
-    letter-spacing: 1rem;
+    letter-spacing: 50px;
     z-index: -1;
-    position: absolute;
+    position: absolute; 
+    transition: .3s ease letter-spacing;
 }
+
 #encabezado .ListaNavegacion ul li:hover a::after {
     transform: translate(-50%, -50%) scale(1);
+    letter-spacing: initial;
+}
+
+#encabezado .ListaNavegacion .hamburgesa {
+    width: 50px;
+    height: 50px;
+    border: 2px solid white;
+    border-radius: 50%;
+    z-index: 100;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transform: scale(0.8);
+}
+
+#encabezado .hamburgesa .barra {
+    width: 30px;
+    height: 2px;
+    background-color: white;
+    position: relative;
+    z-index: -1;
+}
+
+#encabezado .hamburgesa .barra::before,
+#encabezado .hamburgesa .barra::after {
+    content: "";
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    transition: .3s ease;
+    transition-property: top, bottom;
+}
+
+#encabezado .hamburgesa .barra::before {
+    top: 8px;
+}
+
+#encabezado .hamburgesa .barra::after {
+    bottom: 8px;
+}
+
+#encabezado .hamburgesa.activo .barra::before {
+    top: 0;
+}
+#encabezado .hamburgesa.activo .barra::after {
+    bottom: 0;
 }
 
 #heroe {
