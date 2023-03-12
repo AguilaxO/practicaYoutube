@@ -242,14 +242,14 @@ img {
 .hero {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 47px;
+    padding: 0 40px;
     justify-content: flex-start;
 }
 
 #heroe h1 {
     display: block;
     width: fit-content;
-    font-size: 3.5rem;
+    font-size: 3.6rem;
     position: relative;
     color: transparent;
     animation: revelado_texto .5s ease forwards;
