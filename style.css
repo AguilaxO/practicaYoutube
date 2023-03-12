@@ -140,6 +140,10 @@ img {
     
 }
 
+#encabezado .ListaNavegacion li:hover a{ 
+    color: crimson;
+}
+
 #encabezado .ListaNavegacion ul a::after{
     content: attr(data-after);
     text-align: center;
