@@ -104,6 +104,40 @@ img {
     left: 0;
     position: absolute;
     background-color: rgb(31, 30, 30);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 1;
+    overflow-x: hidden;
+}
+
+
+#encabezado .ListaNavegacion ul a{
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 500;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    padding: 20px;
+    
+}
+
+#encabezado .ListaNavegacion ul a::after{
+    content: attr(data-after);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    color: rgba(240, 248, 255, 0.021);
+    font-size: 9rem;
+    letter-spacing: 1rem;
+    z-index: -1;
+    position: absolute;
+}
+#encabezado .ListaNavegacion ul li:hover a::after {
+    transform: translate(-50%, -50%) scale(1);
 }
 
 #heroe {
@@ -663,7 +697,7 @@ img {
 
 /* Sección de computadora */
 @media only screen and (min-width: 1200px){
-    
+
     /* Sección de héroe */
     #heroe .hero h1 {
         font-size: 5rem;
@@ -708,7 +742,7 @@ img {
         margin-left: 5%;
     }
     /* Fin de la sección acerca de mi */
-    
+
     /* Sección del pie de página */
     #pieDePagina .pieDePagina {
         padding: 20px 0;
@@ -748,10 +782,10 @@ img {
     #pieDePagina .pieDePagina-iconos .pieDePagina-icono:nth-child(4) {
         margin-right: 0;
     }
-    
+
     /* Sección del pie de página */
 
 }
 
 /* Fin de la sección de computadora */
- 
+
