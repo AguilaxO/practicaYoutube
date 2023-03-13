@@ -106,8 +106,6 @@ img {
     color: crimson;
 }
 
-
-
 #encabezado .ListaNavegacion ul {
     list-style: none;
     height: 100vh;
@@ -791,6 +789,18 @@ img {
 
 /* Sección de computadora */
 @media only screen and (min-width: 1200px){
+
+    /* Sección de encabezado */
+    #encabezado .ListaNavegacion .hamburgesa {
+        display: none;
+    }
+
+    #encabezado .ListaNavegacion ul {
+        position: initial;
+    }
+
+
+    /* Fin de la sección de encabezado */
 
     /* Sección de héroe */
     #heroe .hero h1 {
