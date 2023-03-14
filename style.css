@@ -797,6 +797,23 @@ img {
 
     #encabezado .ListaNavegacion ul {
         position: initial;
+        display: block;
+        height: auto;
+        width: fit-content;
+        background-color: transparent;
+    }
+
+    #encabezado .ListaNavegacion ul li{
+        display: inline-block;
+    }
+
+    #encabezado .ListaNavegacion ul li a{
+        font-size: 1.8rem;
+        padding: 10px;
+    }
+
+    #encabezado .ListaNavegacion ul a::after {
+        display: none;
     }
 
 
