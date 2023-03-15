@@ -600,6 +600,7 @@ img {
 #pieDePagina .pieDePagina-iconos {
     padding: 10px;
     display: flex;
+    justify-content: center;
 }
 
 #pieDePagina .pieDePagina-icono {
